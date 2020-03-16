@@ -1,14 +1,14 @@
-name: gpcs_remote
-label: GPCS Add New Remote Network
-description: add new site to GPCS cloud instance
-type: panorama-gpcs
+name: PrismaAccess_remote
+label: Prisma Access Add New Remote Network
+description: add new site to Prisma Access cloud instance
+# type: panorama-gpcs
+# temp type to only write to panorama
+type: panorama
 extends:
 
 labels:
-  service_type: gpcs
   collection:
-    - mssp
-    - gpcs
+    - Prisma Access
 
 variables:
   - name: VPN_REMOTE_SITE
